@@ -13,8 +13,7 @@ The repository structure:
 
 ## Quick Search
 
- - [Tradecore SDK Structure] ()
- - [SDK Integration Guide] ()
- - [Banner] ()
- - [Interstitial] ()
- - [Instream] ()
+ - [Tradecore SDK Intro] (docs/tradecore-sdk-intro.md)
+ - [SDK Integration Guide] (docs/tradecore-sdk-integration.md)
+ - [Banner] (docs/tradecore-sdk-ad-view.md)
+ - [Instream] (docs/tradecore-sdk-instream.md)
