@@ -26,7 +26,7 @@ TradecoreSDK.initialize(stackID: String)
 ```
 
 
-The `initialize()` is the primary way to initialize SDK with a specific configuration in runtime. takes the publisher's stack ID as a parameter. 
+The `initialize()` is the primary way to initialize the SDK with a specific configuration at runtime. takes the publisher's stack ID as a parameter. 
 
 
 
@@ -42,7 +42,7 @@ TradecoreSDK.version
 
 ### SDK Log Level
 
-The Tradecore SDK allows you to customize the logs verbose level. Use the following property to reduce log messages to the most critical ones or vice versa, to log as much as possible: 
+The Tradecore SDK allows you  appto customize the logs verbose level. Use the following property to reduce log messages to the most critical ones or vice versa, to log as much as possible: 
 
 ``` swift
 TradecoreSDK.logLevel
