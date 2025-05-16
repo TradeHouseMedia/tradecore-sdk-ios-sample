@@ -3,15 +3,24 @@
 
 The `TradecoreSDK` is an SDK Manager class, a singleton instance that exists in the global context and provides common services for the user s.a.:
 
-- remote configuration loading, refreshing it in runtime
-- common targeting
-- custom analytics tracking
-- factories for various objects if needed
-- There should be an Internal global object counterpart that will be used by Tradecore ad view object instances. 
+- remote configuration loading, refreshing it at runtime;
+- general targeting properties;
+- custom analytics tracking;
+
 
 ## Integrate SDK into the project
 
 Tradecore SDK is available via CocoaPods dependency manager. 
+
+
+The Tradecore SDK consists of several modules that allow seamless combination of a monetization stack for individual publishers. If you need to integrate the full monetization stack (Prebid + Amazon + GAM), just add the following dependency to the `Podfile`: 
+
+
+```
+// TODO
+```
+
+If you need the custom monetization stack, you should integrate the Tradecore SDK Core and the needed Tradecore SDK plugins as separate dependencies: 
 
 ```
 // TODO
@@ -26,11 +35,12 @@ TradecoreSDK.initialize(stackID: String)
 ```
 
 
-The `initialize()` is the primary way to initialize the SDK with a specific configuration at runtime. takes the publisher's stack ID as a parameter. 
+You need only the `stackID` parameter to initialize the SDK according to your needs. All other configuration details will be downloaded from the Trade House platform and applied automatically.  
 
 
+## Utilities
 
-## Utilities 
+Despite the fact that the whole SDK configuration is provided via remote config settings, the TradecoreSDK provides an additional API to change and customize the SDK behaviour and change targeting/configuration params for each particular 
 
 ### SDK Version
 

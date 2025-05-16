@@ -10,14 +10,14 @@ At the first step, you should initialize the `TradecoreInstreamVideo` object in 
 let instreamVideo = TradecoreInstreamVideo(zoneId: String, player: AVPlayer, delegate: TradecoreInstreamVideoDelegate?)
 ``` 
 
-- `zoneID` - the identifier provided by TradeCore platform
+- `zoneID` - the identifier provided by the TradeCore platform
 - `player` - the video player that shows the app content
-- `delegate` - the instance of class that will manager the lifecycle events of the instream ad. 
+- `delegate` - the instance of a class that will manage the lifecycle events of the instream ad. 
 
 
 ## Load Ad
 
-To start ad loading process you should call the `loadAd()` method of the `TradecoreInstreamVideo `: 
+To start the ad loading process, you should call the `loadAd()` method of the `TradecoreInstreamVideo `: 
 
 ``` swift
 instreamVideo.loadAd()
@@ -26,8 +26,16 @@ instreamVideo.loadAd()
 
 ## Subscribe to the ad events
 
-To subscribe to the ad view events, you should implement `TradecoreInstreamVideoDelegate` in your code and register the implementation class in the `delegate` property of the `TradecoreAdView` object: 
+To subscribe to the ad and playback events, you should implement `TradecoreInstreamVideoDelegate` in your code. 
 
-``` swift
-adView.delegate = self
+
+```
+ func instreamVideo(_ instreamVideo: TradecoreInstreamVideo!, adLoadedWith adData: TradecoreInstreamAdData!) {
+
+  }
+```
+
+```
+  func instreamVideo(_ instreamVideo: TradecoreInstreamVideo!, failedWith adErrorData: TradecoreLoadAdError!) {
+}
 ```
