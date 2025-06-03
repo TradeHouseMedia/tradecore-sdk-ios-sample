@@ -11,28 +11,17 @@ func createAd() {
     // 1. Create `TradecoreAdView`, set delegate.
     let tradecoreAdView = TradecoreAdView(zoneId: ZONE_ID, delegate: self)
     
-    // 2. Create and set request parameters if needed.
-    let parameters = TradecoreGAMZoneRequestParameters()
-    parameters.customTargeting = CASTOM_TARGETING
-    parameters.categoryExclusions = CATEGORY_EXCLUSIONS
-    parameters.keywords = KEYWORDS
-    parameters.contentURL = CONTENT_URL
-    parameters.publisherProvidedID = PUBLISHER_PROVIDED_ID
-    parameters.extrasParameters = EXTRAS_PARAMETERS
-    
-    tradecoreAdView.requestParameters = [parameters]
-    
-    // 3. Set root view controller that is used by the ad view to present full screen
+    // 2. Set root view controller that is used by the ad view to present full screen
     // content after the user interacts with the ad.
     tradecoreAdView.rootViewController = self
     
-    // 4. Add to UI
+    // 3. Add to UI
     containerView.addSubview(tradecoreAdView)
     
-    // 5. Store the `TradecoreAdView`.
+    // 4. Store the `TradecoreAdView`.
     self.tradecoreAdView = tradecoreAdView
 
-    // 6. Load the ad
+    // 5. Load the ad
     tradecoreAdView.load()
 }
 ```
@@ -41,8 +30,6 @@ The `TradecoreAdView` should be provided with the configuration properties:
 
 - `zoneId` is the id used to obtain configuration from the global stack.
 - `delegate` is optional parameter that signals about important lifecycle events.
-
-You can optionally provide the zone request parameters. See the [Request Parameters](./tradecore-sdk-request-parameters.md#zone-parameters) section to learn more.
 
 ## Ad events
 
@@ -91,5 +78,5 @@ Refer to the table below for a breakdown of the `TradecoreAdView` properties you
 | Property              | Description                                                                                                     |
 |-----------------------|-----------------------------------------------------------------------------------------------------------------|
 | `rootViewController`  | Reference to a root view controller used by the ad view to present full-screen content after user interaction.  |
-| `requestParameters`   | Instance property to send first-party data for every Tradecore zone.                                            |
+| `requestParameters`   | Instance property to send first-party data for every Tradecore zone. See [Request Parameters](./tradecore-sdk-request-parameters.md#zone-parameters) section for more information.                                           |
 | `adSize`              | Represents the size of the last loaded ad. Get-only property.                                                   |
