@@ -38,7 +38,7 @@ Refer to the table below for a breakdown of the `TradecoreSDK` properties you ca
 |----------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | `logLevel`                             | Controls the verbosity of the SDK logs.                                          |
 | `debugMode`                            | Enables debug mode, which activates test mode in integrated ad SDKs and extra logging.                                 |
-| `requestParameters`                    | Global request parameters, e.g., test device identifiers. For more information, see the [Request Parameters](./tradecore-sdk-request-parameters.md#stack-parameters) page. |
+| `requestParameters`                    | Global request parameters, e.g., test device identifiers. For more information, see the [Request Parameters](./tradecore-sdk-request-parameters.md#stack-parameters) section. |
 | `version`                              | Returns the current SDK version as a string.                                                                           |
 
 ## Ad Format Integration 
