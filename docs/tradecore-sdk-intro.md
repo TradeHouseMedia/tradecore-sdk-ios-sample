@@ -46,4 +46,4 @@ Refer to the table below for a breakdown of the `TradecoreSDK` properties you ca
 Tradecore SDK supports the following ad formats: 
 
 - [Ad View](./tradecore-sdk-ad-view.md) (HTML)
-- [Instream Video](./tradecore-sdk-instream) (Video)
+- [Instream Video](./tradecore-sdk-instream.md) (Video)
