@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YTQ-36-IjK">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="LBY-rZ-VVD">
+            <objects>
+                <navigationController id="YTQ-36-IjK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UoI-38-8pl">
+                        <rect key="frame" x="0.0" y="118" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8Ae-RD-d0k" kind="relationship" relationship="rootViewController" id="eDM-vK-DXX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IVv-XA-Oqz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-48" y="20"/>
+        </scene>
+        <!--Tradecore Demo Swift-->
+        <scene sceneID="ZTb-6p-BrO">
+            <objects>
+                <viewController id="8Ae-RD-d0k" customClass="TestCasesListViewController" customModule="TradecoreDemoAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iFq-pf-dmI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="q7y-3t-xEN">
+                                <rect key="frame" x="0.0" y="167" width="393" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8Ae-RD-d0k" id="ChE-1K-izK"/>
+                                </connections>
+                            </searchBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="fam-CQ-meJ" userLabel="Pickers Main Stack View">
+                                <rect key="frame" x="15" y="228" width="363" height="30"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="a3T-dL-dSs" userLabel="Labels">
+                                        <rect key="frame" x="0.0" y="0.0" width="195.33333333333334" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad Format" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHx-ze-6mH">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.333333333333329" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="M5F-0G-M4m" userLabel="Pickers">
+                                        <rect key="frame" x="195.33333333333337" y="0.0" width="167.66666666666663" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kvl-qE-KA5">
+                                                <rect key="frame" x="0.0" y="0.0" width="167.66666666666666" height="30"/>
+                                                <menu key="menu" id="x1R-Sp-P4o">
+                                                    <children>
+                                                        <command title="Item 1" id="HaY-wr-gcI"/>
+                                                        <command title="Item 2" id="5Qp-qk-GYo"/>
+                                                    </children>
+                                                </menu>
+                                                <state key="normal" title="AdFormat"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FqG-ux-W48">
+                                <rect key="frame" x="0.0" y="263" width="393" height="521"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TestCaseCell" id="P5B-wm-vzp">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P5B-wm-vzp" id="aLY-yG-P0Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7m7-oX-g7m"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7m7-oX-g7m" firstAttribute="bottom" secondItem="FqG-ux-W48" secondAttribute="bottom" id="6ee-ys-X6N"/>
+                            <constraint firstItem="7m7-oX-g7m" firstAttribute="trailing" secondItem="fam-CQ-meJ" secondAttribute="trailing" constant="15" id="Ay6-gp-rK1"/>
+                            <constraint firstItem="q7y-3t-xEN" firstAttribute="top" secondItem="7m7-oX-g7m" secondAttribute="top" constant="5" id="CjV-ZV-lOs"/>
+                            <constraint firstItem="FqG-ux-W48" firstAttribute="leading" secondItem="7m7-oX-g7m" secondAttribute="leading" id="GQ8-Bu-uwh"/>
+                            <constraint firstItem="q7y-3t-xEN" firstAttribute="trailing" secondItem="7m7-oX-g7m" secondAttribute="trailing" id="Vio-0f-iCB"/>
+                            <constraint firstItem="fam-CQ-meJ" firstAttribute="leading" secondItem="7m7-oX-g7m" secondAttribute="leading" constant="15" id="ZTH-QL-P8E"/>
+                            <constraint firstItem="q7y-3t-xEN" firstAttribute="leading" secondItem="7m7-oX-g7m" secondAttribute="leading" id="fLm-2y-2Pt"/>
+                            <constraint firstItem="fam-CQ-meJ" firstAttribute="top" secondItem="q7y-3t-xEN" secondAttribute="bottom" constant="5" id="gJp-kl-JVO"/>
+                            <constraint firstItem="7m7-oX-g7m" firstAttribute="trailing" secondItem="FqG-ux-W48" secondAttribute="trailing" id="uFZ-Qo-LqK"/>
+                            <constraint firstItem="FqG-ux-W48" firstAttribute="top" secondItem="fam-CQ-meJ" secondAttribute="bottom" constant="5" id="vTY-sA-0Gt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tradecore Demo Swift" id="wKY-ws-4dU"/>
+                    <connections>
+                        <outlet property="adFormatPicker" destination="Kvl-qE-KA5" id="pWp-Fs-D1K"/>
+                        <outlet property="searchBar" destination="q7y-3t-xEN" id="jWq-BO-PYh"/>
+                        <outlet property="tableView" destination="FqG-ux-W48" id="pKg-oF-nTD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iN3-B4-HG0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="799" y="25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,25 @@
+platform :ios, '15.0'
+
+target 'TradecoreDemoObjectiveC' do
+  use_frameworks!
+
+  # Pods for TradecoreDemoObjectiveC
+  pod 'GoogleAds-IMA-iOS-SDK'
+  
+  pod 'Tradecore'
+  pod 'TradecoreAmazon'
+  pod 'TradecorePrebid'
+  pod 'TradecoreGoogleMobileAds'
+  pod 'TradecoreGoogleInteractiveMediaAds'
+end
+
+# If you're using `PrebidMobile` version earlier than 3.0.1, be sure to include a post_install block as well.
+#post_install do |installer|
+#  installer.pods_project.targets.each do |target|
+#    if target.name == 'PrebidMobile'
+#      target.build_configurations.each do |config|
+#        config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+#      end
+#    end
+#  end
+#end
