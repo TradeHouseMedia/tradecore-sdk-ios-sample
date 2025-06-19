@@ -35,7 +35,8 @@
     // 3. Set zone-specific parameters if needed.
     TradecoreGAMZoneRequestParameters * parameters = [
         [TradecoreGAMZoneRequestParameters alloc]
-        initWithCustomTargeting:@{@"sample": @"1"}
+        initWithAdUnitID:nil
+        customTargeting:@{@"sample": @"1"}
         categoryExclusions:@[@"sample"]
         keywords:@[@"Sample"]
         contentURL:@"https://sample.com/"

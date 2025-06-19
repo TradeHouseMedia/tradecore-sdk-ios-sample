@@ -35,6 +35,7 @@ The `TradecoreZoneRequestParameters` class should be used to configure Google Ad
 
 | Property               | Description                                                                                              |
 |------------------------|----------------------------------------------------------------------------------------------------------|
+| `adUnitID`             | Used to identify the specific ad placement within Google Ad Manager.                                     |
 | `customTargeting`      | Key-value pairs used for custom targeting in ad requests.                                                |
 | `categoryExclusions`   | Array of categories to exclude from ad results.                                                          |
 | `keywords`             | Array of keywords describing current user activity (e.g., "Sports Scores" or "Football"). Set to nil to clear keywords. |
@@ -49,6 +50,7 @@ let tradecoreAdView = TradecoreAdView(zoneId: ZONE_ID, delegate: self)
 
 // Create `TradecoreGAMZoneRequestParameters` instance
 let parameters = TradecoreGAMZoneRequestParameters()
+parameters.adUnitID = "0123456789/sample-ad-unit-id"
 parameters.customTargeting = ["sample": "1"]
 parameters.categoryExclusions = ["sample"]
 parameters.keywords = ["Sample"]
