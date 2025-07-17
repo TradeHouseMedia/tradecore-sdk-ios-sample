@@ -41,6 +41,9 @@ extension MyViewController: TradecoreAdViewDelegate {
     
     func tradecoreAdDidLoad(ad: TradecoreAd) {
         // Ad is loaded.
+
+        // Change the layout according to ad size.
+        print("Tradecore ad did load with size: \(ad.adSize ?? CGSize.zero)")
     }
     
     func tradecoreAdDidFailToLoad(error: any Error) {

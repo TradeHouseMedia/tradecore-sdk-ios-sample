@@ -62,6 +62,8 @@ extension HTMLAdViewController: TradecoreAdViewDelegate {
     func tradecoreAdDidLoad(ad: TradecoreAd) {
         print("Ad successfully loaded.")
         reloadButton.isEnabled = true
+        
+        print("Tradecore ad did load with size: \(ad.adSize ?? CGSize.zero)")
     }
     
     func tradecoreAdDidFailToLoad(error: any Error) {

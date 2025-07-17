@@ -10,9 +10,11 @@ This class can be especially useful for:
 
 The table below provides an overview of the available properties in `TradecoreAd`:
 
-| Property        | Description                                                               |
-|-----------------|---------------------------------------------------------------------------|
-| `zoneId`        | ID used to obtain configuration from the global stack.                    |
-| `responseInfo`  | Google Mobile Ads specific information about the ad.                      |
-| `pbsTargeting`  | Targeting information provided by Prebid Server.                          |
-| `apsTargeting`  | Targeting information provided by Amazon Publishing Services (APS).       |
+| Property        | Description                                                                        |
+|-----------------|------------------------------------------------------------------------------------|
+| `zoneId`        | ID used to obtain configuration from the global stack.                             |
+| `responseInfo`  | Google Mobile Ads specific information about the ad.                               |
+| `pbsTargeting`  | Targeting information provided by Prebid Server.                                   |
+| `apsTargeting`  | Targeting information provided by Amazon Publishing Services (APS).                |
+| `adSize`        | Represents the size of the last loaded ad view. Get-only property.                 |
+| `adSizeObjc`    | Objective-C API for `adSize` property.                                             |

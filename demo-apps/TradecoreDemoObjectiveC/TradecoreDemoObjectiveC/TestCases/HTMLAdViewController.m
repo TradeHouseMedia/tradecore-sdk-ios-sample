@@ -69,6 +69,8 @@
 - (void)tradecoreAdDidLoadWithAd:(TradecoreAd *)ad {
     NSLog(@"Ad successfully loaded.");
     [self.reloadButton setEnabled:true];
+    
+    NSLog(@"Tradecore ad did load with size: %@", ad.adSizeObjc);
 }
 
 - (void)tradecoreAdDidFailToLoadWithError:(NSError *)error {
