@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3DEADA6CB994C9BE82C4AE80 /* Pods_TradecoreDemoObjectiveC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE30ED1B2313AB4437EFD40 /* Pods_TradecoreDemoObjectiveC.framework */; };
 		535735162DD5C3CB001211D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5357350A2DD5C3CB001211D3 /* Assets.xcassets */; };
 		535735182DD5C3CB001211D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5357350D2DD5C3CB001211D3 /* LaunchScreen.storyboard */; };
 		535735192DD5C3CB001211D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535735102DD5C3CB001211D3 /* Main.storyboard */; };
@@ -24,11 +23,10 @@
 		535735372DD5CAFD001211D3 /* TestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 535735362DD5CAFD001211D3 /* TestCase.m */; };
 		535735FB2DD5D60F001211D3 /* HTMLAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 535735FA2DD5D60F001211D3 /* HTMLAdViewController.m */; };
 		53906D5C2DD5DEC30025923C /* InstreamVideoIMAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53906D5B2DD5DEC30025923C /* InstreamVideoIMAViewController.m */; };
+		9146F80201AAE2AF5C79D3FD /* Pods_TradecoreDemoObjectiveC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A55AF88AD911D1D34E3967 /* Pods_TradecoreDemoObjectiveC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04EA6ED996809ECEAD9B86B4 /* Pods-TradecoreDemoObjectiveC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradecoreDemoObjectiveC.release.xcconfig"; path = "Target Support Files/Pods-TradecoreDemoObjectiveC/Pods-TradecoreDemoObjectiveC.release.xcconfig"; sourceTree = "<group>"; };
-		3AE30ED1B2313AB4437EFD40 /* Pods_TradecoreDemoObjectiveC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TradecoreDemoObjectiveC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		535734972DD5C29F001211D3 /* TradecoreDemoObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradecoreDemoObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		535735082DD5C3CB001211D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		535735092DD5C3CB001211D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,7 +56,9 @@
 		535735FA2DD5D60F001211D3 /* HTMLAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTMLAdViewController.m; sourceTree = "<group>"; };
 		53906D5A2DD5DEC30025923C /* InstreamVideoIMAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstreamVideoIMAViewController.h; sourceTree = "<group>"; };
 		53906D5B2DD5DEC30025923C /* InstreamVideoIMAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstreamVideoIMAViewController.m; sourceTree = "<group>"; };
-		8D8773760564FCAB6EB20290 /* Pods-TradecoreDemoObjectiveC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradecoreDemoObjectiveC.debug.xcconfig"; path = "Target Support Files/Pods-TradecoreDemoObjectiveC/Pods-TradecoreDemoObjectiveC.debug.xcconfig"; sourceTree = "<group>"; };
+		68A55AF88AD911D1D34E3967 /* Pods_TradecoreDemoObjectiveC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TradecoreDemoObjectiveC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D13566B7E1680A53DE851C2 /* Pods-TradecoreDemoObjectiveC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradecoreDemoObjectiveC.release.xcconfig"; path = "Target Support Files/Pods-TradecoreDemoObjectiveC/Pods-TradecoreDemoObjectiveC.release.xcconfig"; sourceTree = "<group>"; };
+		F117E8B290FDC29877709171 /* Pods-TradecoreDemoObjectiveC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradecoreDemoObjectiveC.debug.xcconfig"; path = "Target Support Files/Pods-TradecoreDemoObjectiveC/Pods-TradecoreDemoObjectiveC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DEADA6CB994C9BE82C4AE80 /* Pods_TradecoreDemoObjectiveC.framework in Frameworks */,
+				9146F80201AAE2AF5C79D3FD /* Pods_TradecoreDemoObjectiveC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +79,7 @@
 				535735152DD5C3CB001211D3 /* TradecoreDemoObjectiveC */,
 				535734982DD5C29F001211D3 /* Products */,
 				75DED17C6E28C9F32D51C1F6 /* Pods */,
-				56E8E9ECD15AE778337119C9 /* Frameworks */,
+				FC7DC860291013FAECCC6B4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,21 +158,21 @@
 			path = TestCases;
 			sourceTree = "<group>";
 		};
-		56E8E9ECD15AE778337119C9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3AE30ED1B2313AB4437EFD40 /* Pods_TradecoreDemoObjectiveC.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		75DED17C6E28C9F32D51C1F6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8D8773760564FCAB6EB20290 /* Pods-TradecoreDemoObjectiveC.debug.xcconfig */,
-				04EA6ED996809ECEAD9B86B4 /* Pods-TradecoreDemoObjectiveC.release.xcconfig */,
+				F117E8B290FDC29877709171 /* Pods-TradecoreDemoObjectiveC.debug.xcconfig */,
+				9D13566B7E1680A53DE851C2 /* Pods-TradecoreDemoObjectiveC.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FC7DC860291013FAECCC6B4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68A55AF88AD911D1D34E3967 /* Pods_TradecoreDemoObjectiveC.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,12 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 535734AF2DD5C2A1001211D3 /* Build configuration list for PBXNativeTarget "TradecoreDemoObjectiveC" */;
 			buildPhases = (
-				27FD20AADF6266E6B19DE835 /* [CP] Check Pods Manifest.lock */,
+				B8FCBF67D648978090570C04 /* [CP] Check Pods Manifest.lock */,
 				535734932DD5C29F001211D3 /* Sources */,
 				535734942DD5C29F001211D3 /* Frameworks */,
 				535734952DD5C29F001211D3 /* Resources */,
-				97558D7962A55A1A4BAF1F33 /* [CP] Embed Pods Frameworks */,
-				228BC9A7159A600197548BFD /* [CP] Copy Pods Resources */,
+				87FB5663F72975007EE22336 /* [CP] Embed Pods Frameworks */,
+				354F2CFD6B539E16447760B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,7 +247,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		228BC9A7159A600197548BFD /* [CP] Copy Pods Resources */ = {
+		354F2CFD6B539E16447760B3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -264,7 +264,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TradecoreDemoObjectiveC/Pods-TradecoreDemoObjectiveC-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		27FD20AADF6266E6B19DE835 /* [CP] Check Pods Manifest.lock */ = {
+		87FB5663F72975007EE22336 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TradecoreDemoObjectiveC/Pods-TradecoreDemoObjectiveC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TradecoreDemoObjectiveC/Pods-TradecoreDemoObjectiveC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TradecoreDemoObjectiveC/Pods-TradecoreDemoObjectiveC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8FCBF67D648978090570C04 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,23 +301,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		97558D7962A55A1A4BAF1F33 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TradecoreDemoObjectiveC/Pods-TradecoreDemoObjectiveC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TradecoreDemoObjectiveC/Pods-TradecoreDemoObjectiveC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TradecoreDemoObjectiveC/Pods-TradecoreDemoObjectiveC-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -348,7 +348,7 @@
 /* Begin XCBuildConfiguration section */
 		535734B02DD5C2A1001211D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D8773760564FCAB6EB20290 /* Pods-TradecoreDemoObjectiveC.debug.xcconfig */;
+			baseConfigurationReference = F117E8B290FDC29877709171 /* Pods-TradecoreDemoObjectiveC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -377,7 +377,7 @@
 		};
 		535734B12DD5C2A1001211D3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04EA6ED996809ECEAD9B86B4 /* Pods-TradecoreDemoObjectiveC.release.xcconfig */;
+			baseConfigurationReference = 9D13566B7E1680A53DE851C2 /* Pods-TradecoreDemoObjectiveC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

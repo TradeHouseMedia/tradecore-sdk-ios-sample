@@ -24,12 +24,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         TradecoreSDK.shared.debugMode = true
         
         // Set global request parameters if needed.
-        let parameters = TradecoreGAMStackRequestParameters()
-        parameters.testDeviceIdentifiers = ["00000000-0000000000000000"]
-        TradecoreSDK.shared.requestParameters = [parameters]
+        let gamParameters = TradecoreGAMStackRequestParameters()
+        gamParameters.testDeviceIdentifiers = ["00000000-0000000000000000"]
+        
+        let prebidParameters = TradecorePrebidStackRequestParameters()
+        prebidParameters.appConfig = """
+        {
+            "name": "Tradecore DemoAppSwift",
+            "cat": ["IAB1", "IAB9-9"], 
+            "keywords": "testing,demo",
+            "publisher": {              
+              "cat": ["IAB9", "IAB9-30"]
+            }
+        }
+        """
+        
+        TradecoreSDK.shared.requestParameters = [gamParameters, prebidParameters]
         
         // Initialize Tradecore SDK with the respective Stack ID and Itunes ID.
-        TradecoreSDK.shared.initialize(with: "tradecore-stack-69", itunesId: "123456789")
+        TradecoreSDK.shared.initialize(
+            with: "tradecore-stack-69",
+            itunesId: "123456789"
+        ) { error in
+            if let error {
+                print("Tradecore SDK failed to initialize with error: \(error.localizedDescription)")
+                return
+            }
+            
+            // Tradecore SDK is ready to start loading the ads.
+        }
     }
 
     // MARK: UISceneSession Lifecycle

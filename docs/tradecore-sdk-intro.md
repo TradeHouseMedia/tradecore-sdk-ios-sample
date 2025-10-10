@@ -20,7 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-        TradecoreSDK.shared.initialize(with: STACK_ID, itunesId: ITUNES_ID)
+        TradecoreSDK.shared.initialize(with: STACK_ID, itunesId: ITUNES_ID) { error in
+            guard error = nil else {
+                print("Tradecore SDK initialization failed with error: \(String(describing: error?.localizedDescription))")
+                return
+            }
+            
+            // The Tradecore SDK is ready to start loading the ad.
+        }
         return true
     }
 }
@@ -29,7 +36,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 Parameters for the `.initialize` call:
 - `stackId` is the Tradecore-specific identifier provided individually to each publisher.
 - `itunesId` is the iTunes identifier, typically used for referencing media or apps. 
-
+- `completionHandler` is an optional block that is called when the SDK initialization process is complete.
+  
 ### Additional SDK Configuration
 
 Refer to the table below for a breakdown of the `TradecoreSDK` properties you can use for configuration.
