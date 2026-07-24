@@ -1,5 +1,24 @@
 # Tradecore iOS SDK - Integration
 
+## Swift Package Manager
+
+The SDK is also distributed as a Swift Package:
+
+```
+https://github.com/TradeHouseMedia/tradecore-sdk-ios-spm.git
+```
+
+In Xcode select **File → Add Package Dependencies…**, enter the URL above, and add the `Tradecore` product to your application target.
+
+Additionally, add a respective product for each monetization platform you use in the app:
+
+- `TradecoreAmazon` — Amazon Publishing Service SDK
+- `TradecorePrebid` — Prebid Mobile
+- `TradecoreGoogleMobileAds` — Google Ad Manager
+- `TradecoreGoogleInteractiveMediaAds` — Google Interactive Media Ads
+
+Each of these products automatically pulls in the core SDK and the corresponding partner SDK. If the application has dependencies on Prebid, Amazon, or Google SDKs, you should remove them — Tradecore modules will integrate them automatically.
+
 ## Cocoapods
 
 We assume the [Cocoapods](cocoapods.org) dependency manager is already integrated into the project. If not follow the **Get Started** instructions on [cocoapods.org](cocoapods.org). 

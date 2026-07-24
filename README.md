@@ -13,9 +13,9 @@ Tradecore SDK is a native iOS library that enables seamless integration with Pre
 
 ## Integration Prerequisites
 
-The minimum deployment target is **iOS 12.0**.
+The minimum deployment target is **iOS 12.0** for Cocoapods and **iOS 15.0** for Swift Package Manager.
 
-We assume the [Cocoapods](cocoapods.org) dependency manager is already integrated into the project. If not follow the **Get Started** instructions on [cocoapods.org](cocoapods.org). 
+The SDK can be integrated via [Swift Package Manager](docs/tradecore-sdk-integration.md#swift-package-manager) or [Cocoapods](docs/tradecore-sdk-integration.md#cocoapods). 
 
 ## Quick Search
 
